@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="1"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/left_chat_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/pink"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/left_chat_iv"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/result_pic"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/left_chat_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/left_suggest_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n맞춤 제품 추천을 받으시겠습니까?"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/chat_item_view_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:text="추천 상품 보기"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_chat_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/dark_blue"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/right_chat_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/right_chat_iv"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/newImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

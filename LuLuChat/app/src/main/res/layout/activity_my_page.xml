@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Lottieuser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/user" />
+
+    <TextView
+        android:id="@+id/textView_studentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/Lottieuser"
+        android:layout_alignTop="@+id/Lottieuser"
+        android:layout_marginStart="16dp"
+        android:text="Student ID"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_studentId"
+        android:layout_alignStart="@id/textView_studentId"
+        android:layout_marginTop="20dp"
+        android:text="Gender"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textView_gender"
+        android:layout_alignTop="@id/textView_gender"
+        android:layout_marginStart="20dp"
+        android:text="Age"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Back"
+        android:background="@drawable/rounded_corner"
+        android:id="@+id/BackButton"
+        android:textColor="@color/black"
+        android:elevation="8dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_age"
+        android:layout_marginTop="33dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_today"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:text="Today" />
+
+        <Button
+            android:id="@+id/button_scrap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:text="Scrap" />
+
+        <Button
+            android:id="@+id/button_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:text="Product" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/image_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout">
+
+        <ImageView
+            android:id="@+id/today_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/today"
+            android:adjustViewBounds="true"
+            android:visibility="gone" />
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/listView_scrappedMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout"
+        android:layout_marginTop="20dp" />
+
+    <ListView
+        android:id="@+id/listView_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

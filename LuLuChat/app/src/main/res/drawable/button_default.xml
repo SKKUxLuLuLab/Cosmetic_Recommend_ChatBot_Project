@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#ff8d90" /> <!-- 흰색 배경 -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <item android:bottom="4dp"> <!-- 아래쪽에만 선을 적용 -->
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- 아래쪽에 빨간색 선 -->
+            <size android:height="4dp" />
+        </shape>
+    </item>
+</layer-list>

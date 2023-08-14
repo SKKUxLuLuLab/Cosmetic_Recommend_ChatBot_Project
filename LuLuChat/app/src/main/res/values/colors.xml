@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="teal">#4b9c76</color>
+    <color name="crimson">#DC143C</color>
+    <color name="pink">#ff8d90</color>
+    <color name="green">#2de382</color>
+    <color name="status_bar_color">#ff8d90</color>
+    <color name="grey">#bec1c2</color>
+    <color name="dark_blue">#48cbf7</color>
+    <color name="red">#ff8d90</color>
+    <color name="mintcreen">#00ffc7</color>
+    <color name="lightgrey">#cccccc</color>
+    <color name="navyblue">#000080</color>
+    <color name="Gold">#ffd700</color>
+    <color name="pastelgreen">#00cba9</color>
+    <color name="lightblue">#add8e6</color>
+</resources>
+
+
+
+

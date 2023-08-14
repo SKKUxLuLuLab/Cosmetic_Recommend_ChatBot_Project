@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/prod_scrab"
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/heart_button"
+        android:layout_width="22dp"
+        android:layout_height="36dp"
+        android:layout_weight="0.1"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/empty_heart" />
+
+</LinearLayout>
